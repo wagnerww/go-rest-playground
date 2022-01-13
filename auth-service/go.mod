@@ -1,4 +1,4 @@
-module github.com/wagnerww/go-rest-playground.git
+module github.com/wagnerww/go-rest-playground
 
 go 1.15
 

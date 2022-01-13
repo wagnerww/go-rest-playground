@@ -18,10 +18,15 @@ type ProductService interface {
 
 type ProductServiceImpl struct {
 	productRepository repository.ProductRepository
+	authService       AuthService
 }
 
-func NewProductService(repository repository.ProductRepository) ProductService {
-	return ProductServiceImpl{repository}
+func NewProductService(repository repository.ProductRepository,
+	authService AuthService) ProductService {
+	return ProductServiceImpl{
+		repository,
+		authService,
+	}
 }
 
 func (p ProductServiceImpl) Save(productInput input.Product) output.Product {
@@ -48,6 +53,8 @@ func (p ProductServiceImpl) GetAll() []output.Product {
 		var outputEntity = mapper.ToSimpleOuput(entities[i])
 		outputs = append(outputs, outputEntity)
 	}
+
+	p.authService.validateUser()
 
 	return outputs
 

@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/wagnerww/go-rest-playground.git/modules"
+	"github.com/wagnerww/go-rest-playground.git/api/modules"
 	"gorm.io/gorm"
 )
 
