@@ -7,35 +7,23 @@ Microsservices development in GO(Golang)
   - product-service: Api return products
 
 ## Skils
-
-### Architecture/DDD
   - Hexagonal architecture
-### Framework
-- GIN (Gin-gonic)
-
-### HTTP
-- API Restfull
-- gRPC
-
-### DATABASE
-- Gorm(Database ORM)
-- Migrations
-
-### Messaging
+  - Framework GIN (Gin-gonic)
+  - API Restfull
+  - gRPC
+  - PostgreSQL
+  - Gorm(Database ORM)
+  - Migrations
   - RabbitMQ
-
-### Autentication
   - JWT
   - Bcrypt
-
-### DOCS
+  - Gin Middleware
   - OpenAPI(Swagger)
-
-### OTHERS
   - Docker
   - Enviroment variables
   - DTOs
   - Assemblers or Model Mappers
+  - Wirings(Modulate app)
  
 ## Bootstrap
 
